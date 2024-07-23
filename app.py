@@ -37,7 +37,6 @@ def index():
         total_records = collection.count_documents({})
         total_pages = (total_records // per_page) + 1
 
-        # Determine the range of pages to display
         start_page = max(1, page - 1)
         end_page = min(total_pages, start_page + 2)
         if end_page - start_page < 2:

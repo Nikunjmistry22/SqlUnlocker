@@ -32,3 +32,27 @@
         .difficulty-hard {
             color: red;
         }
+                .hidden {
+            display: none;
+        }
+        .question-header {
+            font-size: 1.25rem; /* Adjust size as needed */
+        }
+        .btn-group {
+            display: flex;
+            gap: 10px;
+        }
+        @media (max-width: 576px) {
+            .question-header {
+                font-size: 1rem; /* Smaller font size for mobile */
+            }
+            .btn-group {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+        @media (min-width: 576px) {
+            .btn-group {
+                flex-direction: row;
+            }
+        }
